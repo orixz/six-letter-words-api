@@ -1,0 +1,12 @@
+elements-to-combine: 2
+spring:
+  datasource:
+    url: jdbc:h2:file:./six.letter.app.db;AUTO_SERVER=true;IGNORECASE=TRUE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
